@@ -42,5 +42,5 @@ curl_close ($ch);
   }
   
 }
-$gc = new ducksboardWidget("41142", array('value'=>"510"));
+//$gc = new ducksboardWidget("41142", array('value'=>"510"));
 ?>
