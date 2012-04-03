@@ -30,7 +30,7 @@ class ducksboardWidget {
     $this->postfield = json_encode($information);
     
     
- $ch = curl_init('https://push.ducksboard.com/values/' . $this->widget . '/');
+$ch = curl_init('https://push.ducksboard.com/values/' . $this->widget . '/');
 curl_setopt($ch, CURLOPT_USERPWD, $this->apikey . ":ignored"); 
 curl_setopt ($ch, CURLOPT_POSTFIELDS, $this->postfield );
 curl_setopt ($ch, CURLOPT_POST, 1);
@@ -42,5 +42,5 @@ curl_close ($ch);
   }
   
 }
-//$gc = new ducksboardWidget("41142", array('value'=>"510"));
+//$gc = new ducksboardWidget("41142", array('value'=>"510")); teste
 ?>
